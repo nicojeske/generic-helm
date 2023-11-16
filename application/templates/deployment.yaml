@@ -244,9 +244,11 @@ spec:
           name: {{ template "application.name" . }}-data
         {{- end }}
         {{- if .Values.deployment.volumeMounts }}
-        {{- range $key, $value := .Values.deployment.volumeMounts }}
-        - name: {{ $key }}
-{{  include "application.tplvalues.render" ( dict "value" $value "context" $ ) | indent 10 }} 	
+        {{- range $volumeName, $mounts := .Values.deployment.volumeMounts }}
+        {{- range $index, $value := $mounts }}
+        - name: {{ $volumeName }}
+{{  include "application.tplvalues.render" ( dict "value" $value "context" $ ) | indent 10 }}
+        {{- end }}
         {{- end }}
         {{- end }}
       {{- end }}
