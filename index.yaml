@@ -24,6 +24,27 @@ entries:
     version: 2.2.14
   generic:
   - apiVersion: v2
+    created: "2025-01-25T19:58:27.786918756Z"
+    description: Generic helm chart for all kind of applications
+    digest: dd5a761a038f82761e6eebb7c82a0a2a93d115d09889d63de14147749e12a6dd
+    home: https://github.com/nicojeske/generic-helm
+    icon: https://github.com/stakater/ForecastleIcons/blob/master/stakater.png
+    keywords:
+    - java
+    - node
+    - dotnet
+    - kubernetes
+    - stakater
+    - application
+    maintainers:
+    - email: hello@stakater.com
+      name: Stakater
+    name: generic
+    type: application
+    urls:
+    - https://nicojeske.github.io/generic-helm/generic-2.2.15.tgz
+    version: 2.2.15
+  - apiVersion: v2
     created: "2023-11-16T20:27:22.972669776Z"
     description: Generic helm chart for all kind of applications
     digest: ae68b53251c6c90933309db6c550a257b46f4556663e0cac5fd8d668a8b290c9
@@ -44,4 +65,4 @@ entries:
     urls:
     - https://nicojeske.github.io/generic-helm/generic-2.2.14.tgz
     version: 2.2.14
-generated: "2023-11-16T20:27:22.970408358Z"
+generated: "2025-01-25T19:58:27.784331347Z"
